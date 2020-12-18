@@ -1,5 +1,6 @@
 const clockContainer = document.querySelector(".js-clock"),
-    clockTitle = clockContainer.querySelector("h1");
+    clockTitle = clockContainer.querySelector("h1"),
+    title = document.querySelector("#title");
 
 function getTime(){
     const date = new Date();
@@ -12,9 +13,20 @@ function getTime(){
     
 }
 
-function init(){
-    getTime();
-    setInterval(getTime, 1000);
+function handleClick(){
+    if (title.style.color == "blue"){
+        title.style.color = "white";
+    }
+    else {
+        title.style.color = "blue";
+    }
+    
 }
 
+function init(){
+    getTime();
+    
+    setInterval(getTime, 1000);
+}
+title.addEventListener("click", handleClick);
 init();
