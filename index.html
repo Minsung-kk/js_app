@@ -2,14 +2,26 @@
 <html>
     <head>
         <title> heh </title>
-         <link rel="stylesheet"
+        <meta charset="utf-8"/>
+        <link rel="stylesheet"
          href="index.css"/>                 
     </head>
     <body>
-        <h1 id="title">click me</h1>
+        <!-- <h1 id="title">click me</h1> -->
         <div class="js-clock">
             <h1>00:00</h1>
         </div>
+        <form class="js-form-greeting form">
+            <input type="text" placeholder="What is your name?"/>
+        </form>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-form-toDo">
+            <input type="text" placeholder="Write a to do" />
+        </form>
+        <ul class="js-toDoList">
+        </ul>
         <script src='clock.js'></script>
+        <script src='greeting.js'></script>
+        <script src='todo.js'></script>
     </body>
 </html>

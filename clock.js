@@ -24,9 +24,9 @@ function handleClick(){
 }
 
 function init(){
-    getTime();
-    
+    getTime();   
     setInterval(getTime, 1000);
 }
-title.addEventListener("click", handleClick);
+
 init();
+// title.addEventListener("click", handleClick);
